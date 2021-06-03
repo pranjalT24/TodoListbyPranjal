@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 function App(){
     const [item, setitem] = useState("")
@@ -10,7 +10,7 @@ function App(){
     }
 
     const deleteItem=id=>{
-        setitemlist(itemlist.filter((val,ind)=>ind!=id))
+        setitemlist(itemlist.filter((val,ind)=>ind!==id))
     }
 
     return (
